@@ -1,0 +1,31 @@
+{
+  "name": "mcp-servers-presentation",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^8.0.0",
+    "astro": "^6.0.4",
+    "gsap": "^3.13.0",
+    "lucide-svelte": "^0.555.0",
+    "svelte": "^5.53.11",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.7",
+    "@tailwindcss/postcss": "^4.1.17",
+    "postcss": "^8.5.6",
+    "typescript": "^5.7.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "lodash": ">=4.17.23"
+    }
+  }
+}
