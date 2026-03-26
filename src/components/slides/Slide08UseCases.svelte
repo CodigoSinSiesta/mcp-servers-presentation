@@ -232,6 +232,36 @@
     white-space: pre;
   }
 
+  @media (max-height: 900px) and (min-width: 769px) {
+    .slide-content {
+      padding: 8px var(--spacing-content);
+      gap: var(--spacing-md);
+    }
+    .title {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    }
+    .use-cases-grid {
+      gap: var(--spacing-md);
+    }
+    .use-case-card {
+      padding: var(--spacing-md);
+      gap: var(--spacing-sm);
+    }
+    .card-icon { font-size: 1.4rem; }
+    .card-title { font-size: 1.1rem; }
+    .card-desc {
+      font-size: 0.82rem;
+      line-height: 1.4;
+    }
+    pre { padding: 6px 10px; }
+    code {
+      font-size: 0.68rem;
+      line-height: 1.35;
+    }
+    .code-header { padding: 5px 10px; }
+    .dot { width: 7px; height: 7px; }
+  }
+
   @media (max-width: 1024px) {
     .use-cases-grid { grid-template-columns: 1fr; gap: var(--spacing-md); }
     .use-case-card { padding: var(--spacing-lg); }

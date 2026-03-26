@@ -269,6 +269,45 @@ mcp = <span class="type">FastMCP</span>(<span class="str">"math"</span>)
     margin-bottom: 0;
   }
 
+  @media (max-height: 900px) and (min-width: 769px) {
+    .slide-content {
+      padding: 10px var(--spacing-content);
+      gap: var(--spacing-sm);
+    }
+    .title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+    .main-layout {
+      gap: var(--spacing-md);
+    }
+    .code-panel {
+      padding: var(--spacing-md);
+      gap: var(--spacing-xs);
+    }
+    .panel-title {
+      font-size: 0.95rem;
+      padding-bottom: var(--spacing-xs);
+    }
+    .code-block {
+      font-size: 0.70rem;
+      line-height: 1.4;
+    }
+    .eliminated-features {
+      gap: var(--spacing-sm);
+      margin-top: var(--spacing-xs);
+    }
+    .feature-item {
+      padding: var(--spacing-sm);
+    }
+    .strikethrough { font-size: 0.72rem; }
+    .replacement { font-size: 0.78rem; }
+    .footer-note { margin-top: 0; }
+    .footer-note p {
+      font-size: 0.75rem;
+      padding: var(--spacing-xs) var(--spacing-md);
+    }
+  }
+
   @media (max-width: 1024px) {
     .eliminated-features {
       grid-template-columns: repeat(2, 1fr);

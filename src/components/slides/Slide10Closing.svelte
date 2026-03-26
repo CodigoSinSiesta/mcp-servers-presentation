@@ -322,6 +322,44 @@
     letter-spacing: 0.05em;
   }
 
+  @media (max-height: 900px) and (min-width: 769px) {
+    .slide-content {
+      padding: 10px var(--spacing-content);
+      gap: var(--spacing-md);
+    }
+    .title {
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+    .label {
+      font-size: 0.78rem;
+      padding: 0.3rem 0.9rem;
+    }
+    .summary-pills { gap: var(--spacing-sm); }
+    .pill {
+      font-size: 0.82rem;
+      padding: 0.4rem 1rem;
+    }
+    .cta-box {
+      padding: var(--spacing-lg) var(--spacing-xl);
+      gap: var(--spacing-md);
+    }
+    .cta-icon { font-size: 2.2rem; }
+    .cta-title { font-size: 1.6rem; }
+    .cta-subtitle { font-size: 0.95rem; }
+    .exercises { gap: var(--spacing-sm); }
+    .exercise-row { padding: 0.6rem 1.2rem; }
+    .exercise-number { width: 26px; height: 26px; }
+    .exercise-text { font-size: 0.9rem; }
+    .repo-badge {
+      font-size: 0.82rem;
+      padding: 0.5rem 1rem;
+      margin-top: 0;
+    }
+    .repo-badge svg { width: 16px; height: 16px; }
+    .bottom-row { margin-top: var(--spacing-xs); }
+    .author { font-size: 0.9rem; }
+  }
+
   @media (max-width: 768px) {
     .title { font-size: clamp(2.2rem, 8vw, 3rem); }
     .cta-box { padding: var(--spacing-xl) var(--spacing-lg); }
