@@ -1,3 +1,29 @@
 ---
+import PresentationLayout from '@/layouts/PresentationLayout.astro';
+import Navigation from '@/components/Navigation.svelte';
+import Slide01Hero from '@/components/slides/Slide01Hero.svelte';
+import Slide02TheProblem from '@/components/slides/Slide02TheProblem.svelte';
+import Slide03WhatIsMCP from '@/components/slides/Slide03WhatIsMCP.svelte';
+import Slide04MCPPrimitives from '@/components/slides/Slide04MCPPrimitives.svelte';
+import Slide05ServerAnatomy from '@/components/slides/Slide05ServerAnatomy.svelte';
+import Slide06FastMCPComparison from '@/components/slides/Slide06FastMCPComparison.svelte';
+import Slide07Ecosystem from '@/components/slides/Slide07Ecosystem.svelte';
+import Slide08UseCases from '@/components/slides/Slide08UseCases.svelte';
+import Slide09BestPractices from '@/components/slides/Slide09BestPractices.svelte';
+import Slide10Closing from '@/components/slides/Slide10Closing.svelte';
 ---
-<html><body><p>Slides coming soon</p></body></html>
+
+<PresentationLayout>
+  <Navigation client:load>
+    <Slide01Hero client:visible />
+    <Slide02TheProblem client:visible />
+    <Slide03WhatIsMCP client:visible />
+    <Slide04MCPPrimitives client:visible />
+    <Slide05ServerAnatomy client:visible />
+    <Slide06FastMCPComparison client:visible />
+    <Slide07Ecosystem client:visible />
+    <Slide08UseCases client:visible />
+    <Slide09BestPractices client:visible />
+    <Slide10Closing client:visible />
+  </Navigation>
+</PresentationLayout>
